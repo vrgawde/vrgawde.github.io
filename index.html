@@ -2,7 +2,9 @@
 <html>
 <title>Vishal | Portfolio</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,8 +12,16 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
-<body class="w3-light-grey">
-
+<script>
+        $(window).load(function () {
+            setTimeout(() => {
+                $(".se-pre-con").fadeOut("slow");
+            }, 3000);
+        });
+    </script>
+    
+<body style="background-color: #1a1a1a;">
+<!-- <div class="se-pre-con"></div> -->
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -21,71 +31,71 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Left Column -->
     <div class="w3-third">
     
-      <div class="w3-white w3-text-grey w3-card-4">
+      <div class="w3-black w3-text-grey w3-card-4">
         <div class="w3-display-container">
-          <img src="/assets/profile.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-teal">
-            <h2>Vishal Gawde</h2>
-          </div>
+          <img src="assets/profile.jpg" style="width:100%" alt="Avatar">
+          <!-- <div class="w3-display-bottomleft w3-container w3-text-teal"> -->
+            <h2 class=" w3-container w3-text-teal">Vishal Gawde</h2>
+          <!-- </div> -->
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Developer and Mobile App Developer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Mumbai, India</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>vrgawde1@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91-9833981384</p>
+          <p class="w3-text-white"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web and Mobile App Developer</p>
+          <p class="w3-text-white"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Mumbai, India</p>
+          <p class="w3-text-white"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>vrgawde1@gmail.com</p>
+          <p class="w3-text-white"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91-9833981384</p>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Flutter</p>
+          <p class="w3-large w3-text-teal"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p class="w3-text-white">Flutter</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
           </div>
-          <p>HTML5/CSS3/BOOTSTRAP4</p>
+          <p class="w3-text-white">HTML5/CSS3/BOOTSTRAP4</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">
               <div class="w3-center w3-text-white">75%</div>
             </div>
           </div>
-          <p>Nodejs</p>
+          <p class="w3-text-white">Nodejs</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
           </div>
-          <p>Reactjs</p>
+          <p class="w3-text-white">Reactjs</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
           </div>
-          <p>Angular</p>
+          <p class="w3-text-white">Angular</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
           </div>
-          <p>MongoDB</p>
+          <p class="w3-text-white">MongoDB</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
           </div>
-          <p>MySQL</p>
+          <p class="w3-text-white">MySQL</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
           </div>
           <br>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Programming Languages</b></p>
-          <p>Javascript/Typescript</p>
+          <p class="w3-large w3-text-theme w3-text-teal"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Programming Languages</b></p>
+          <p class="w3-text-white">Javascript/Typescript</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:85%"></div>
           </div>
-          <p>Go</p>
+          <p class="w3-text-white">Go</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:75%"></div>
           </div>
-          <p>Dart</p>
+          <p class="w3-text-white">Dart</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:75%"></div>
           </div>
-          <p>Python</p>
+          <p class="w3-text-white">Python</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:75%"></div>
           </div>
-          <p>C/C++</p>
+          <p class="w3-text-white">C/C++</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
           </div>
@@ -99,46 +109,65 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     <!-- Right Column -->
     <div class="w3-twothird">
     
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Personal Projects</h2>
+      <div class="w3-container w3-card w3-black w3-margin-bottom">
+        <h2 class="w3-text-teal w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Personal Projects</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>VOICES OF MUMBAI (MASTEK'S DEEP BLUE SEASON 4)</b></h5>
+          <h5 class="w3-text-white"><b>DOCR</b></h5> 
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - ongoing </h6>
+          <p class="w3-text-grey">A service for extracting text from ID cards in India, like Aadhar Card, PAN Card and Driving Licence. You just need to click and send a picture of the card to the API and get a json with your details.</p>
+            <h6 class="w3-text-teal">Android/iOS App using Flutter/Dart </h6>
+            <h6 class="w3-text-teal">Backend - Gin Framework using Go lang and gosseract</h6>
+            <!-- <div class="w3-container"> -->
+                <a href="" target="_blank" class="w3-btn w3-teal w3-margin-right">View on Github</a>
+              <a href="assets/demo.m4v" target="_blank" class="w3-btn w3-teal">View Project Video</a>
+            <!-- </div> -->
+          </div>
+          <hr>
+        <div class="w3-container">
+          <h5 class="w3-text-white"><b>PLANT MONITOR</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h6>
+          <p class="w3-text-grey">Flutter App to Monitor the Plants data like moisture, temperature and humidity which is collected using Iot devices and sensors.</p>
+            <h6 class="w3-text-teal">Android/iOS App using Flutter/Dart </h6>
+            <h6 class="w3-text-teal">Backend - Nodejs/Express and MongoDB</h6>
+            <!-- <div class="w3-container"> -->
+              <a href="https://gitlab.com/vrgawde1/plants_monitor" target="_blank" class="w3-button w3-teal plant w3-margin-right">View on Gitlab</a>             
+              <a href="assets/plant.m4v" target="_blank" class="w3-button w3-teal plant">View Project Video</a><br>
+            <!-- </div> -->
+        </div>
+        <hr>
+        <div class="w3-container">
+          <h5 class="w3-text-white"><b>VOICES OF MUMBAI (MASTEK'S DEEP BLUE SEASON 4)</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2019 </h6>
-          <p>A service for people to report the potholes in their area. It is a telegram service bot wherein you can report the image and location of the pothole.<br>
-            Github -  <a href="https://github.com/vrgawde/Voices_of_Mumbai" target="_blank">https://github.com/vrgawde/Voices_of_Mumbai</a></p>
+          <p class="w3-text-grey">A service for people to report the potholes in their area. It is a telegram service bot wherein you can report the image and location of the pothole.</p>
+            <a href="https://github.com/vrgawde/Voices_of_Mumbai" target="_blank" class="w3-btn w3-teal w3-margin-right">View on Github</a>
+          </div>
           <hr>
-        </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>QR SCANNER APP (ERR_404 2.0 HACKATHON)</b></h5>
+          <h5 class="w3-text-white"><b>QR SCANNER APP (ERR_404 2.0 HACKATHON)</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h6>
-          <p>This apps marks the attendance of Hackathon participants by scanning the QR code provided to them. This is app is build using flutter and dart so it can run on Android and iOS. For Saving the attendance record Firebase is used as backend.<br>
-            Gitlab - <a href="https://gitlab.com/vrgawde1/qrscanner" target="_blank">https://gitlab.com/vrgawde1/qrscanner</a></p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>PLANT MONITOR</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h6>
-          <p>Flutter App to Monitor the Plants data like moisture, temperature and humidity which is collected using Iot devices and sensors. Nodejs and MongoDB is used to serve the data to the App.<br>
-            Gitlab - <a href="https://gitlab.com/vrgawde1/plants_monitor" target="_blank">https://gitlab.com/vrgawde1/plants_monitor</a></p><br>
-        </div>
+          <p class="w3-text-grey">This apps marks the attendance of Hackathon participants by scanning the QR code provided to them.</p>
+            <h6 class="w3-text-teal">Android/iOS App using Flutter/Dart </h6>
+            <h6 class="w3-text-teal">Backend - Firebase</h6>
+            <a href="https://gitlab.com/vrgawde1/qrscanner" target="_blank" class="w3-btn w3-teal w3-margin-right w3-margin-bottom">View on Gitlab</a><br>
+        </div>  
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+      <div class="w3-container w3-card w3-black">
+        <h2 class="w3-text-teal w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>M.H. SABOO SIDDIK COLLEGE OF ENGINEERING</b></h5>
+          <h5 class="w3-text-white"><b>M.H. SABOO SIDDIK COLLEGE OF ENGINEERING</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h6>
           <p>B.E (COMPUTER)</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>AMBOLI PUBLIC SCHOOL & JR. COLLEGE OF SCIENCE</b></h5>
+          <h5 class="w3-text-white"><b>AMBOLI PUBLIC SCHOOL & JR. COLLEGE OF SCIENCE</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013</h6>
           <p>HSC</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>AMBOLI PUBLIC SCHOOL</b></h5>
+          <h5 class="w3-text-white"><b>AMBOLI PUBLIC SCHOOL</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011</h6>
           <p>SSC</p><br>
         </div>
@@ -153,15 +182,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <!-- End Page Container -->
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+<footer class="w3-container w3-black w3-center w3-margin-top">
   <p>Find me on social media.</p>
   <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
   <i class="fa fa-instagram w3-hover-opacity"></i>
   <i class="fa fa-snapchat w3-hover-opacity"></i>
   <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity w3-margin-right w3-margin-bottom"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
 </footer>
-
 </body>
 </html>
