@@ -5,6 +5,8 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,7 +23,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </script>
     
 <body style="background-color: #1a1a1a;">
-<!-- <div class="se-pre-con"></div> -->
+<div class="se-pre-con"></div>
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -29,20 +31,24 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <div class="w3-row-padding">
   
     <!-- Left Column -->
-    <div class="w3-third">
+    <div class="w3-third reveal-bottom">
     
       <div class="w3-black w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <img src="assets/profile.jpg" style="width:100%" alt="Avatar">
-          <!-- <div class="w3-display-bottomleft w3-container w3-text-teal"> -->
-            <h2 class=" w3-container w3-text-teal">Vishal Gawde</h2>
-          <!-- </div> -->
+          <div class="w3-container w3-text-teal">
+            <h2>Vishal Gawde</h2>
+          </div>
         </div>
         <div class="w3-container">
           <p class="w3-text-white"><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web and Mobile App Developer</p>
           <p class="w3-text-white"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Mumbai, India</p>
           <p class="w3-text-white"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>vrgawde1@gmail.com</p>
           <p class="w3-text-white"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91-9833981384</p>
+          <button class="w3-button w3-teal" type="submit"
+                onclick="window.open('./assets/resume.pdf')">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
           <hr>
 
           <p class="w3-large w3-text-teal"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
@@ -73,6 +79,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
           </div>
           <p class="w3-text-white">MySQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <p class="w3-text-white">Docker</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
             <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
           </div>
@@ -107,7 +117,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     </div>
 
     <!-- Right Column -->
-    <div class="w3-twothird">
+    <div class="w3-twothird" id="reveal-right">
     
       <div class="w3-container w3-card w3-black w3-margin-bottom">
         <h2 class="w3-text-teal w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Personal Projects</h2>
@@ -118,8 +128,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <h6 class="w3-text-teal">Android/iOS App using Flutter/Dart </h6>
             <h6 class="w3-text-teal">Backend - Gin Framework using Go lang and gosseract</h6>
             <!-- <div class="w3-container"> -->
-                <a href="" target="_blank" class="w3-btn w3-teal w3-margin-right">View on Github</a>
-              <a href="assets/demo.m4v" target="_blank" class="w3-btn w3-teal">View Project Video</a>
+              <a href="" target="_blank" class="w3-btn w3-teal w3-margin-right">View on Github</a>
+              <a href="assets/pan.m4v" target="_blank" class="w3-btn w3-teal">View Project Video</a>
             <!-- </div> -->
           </div>
           <hr>
@@ -145,14 +155,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container">
           <h5 class="w3-text-white"><b>QR SCANNER APP (ERR_404 2.0 HACKATHON)</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019</h6>
-          <p class="w3-text-grey">This apps marks the attendance of Hackathon participants by scanning the QR code provided to them.</p>
+          <p class="w3-text-grey">This App marks the attendance of Hackathon participants by scanning the QR code provided to them.</p>
             <h6 class="w3-text-teal">Android/iOS App using Flutter/Dart </h6>
             <h6 class="w3-text-teal">Backend - Firebase</h6>
             <a href="https://gitlab.com/vrgawde1/qrscanner" target="_blank" class="w3-btn w3-teal w3-margin-right w3-margin-bottom">View on Gitlab</a><br>
         </div>  
       </div>
 
-      <div class="w3-container w3-card w3-black">
+      <div class="w3-container w3-card w3-black" id="reveal-bottom">
         <h2 class="w3-text-teal w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
         <div class="w3-container">
           <h5 class="w3-text-white"><b>M.H. SABOO SIDDIK COLLEGE OF ENGINEERING</b></h5>
@@ -191,5 +201,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   <i class="fa fa-twitter w3-hover-opacity w3-margin-right w3-margin-bottom"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
 </footer>
+<script src="js/main.js"></script>
 </body>
 </html>
